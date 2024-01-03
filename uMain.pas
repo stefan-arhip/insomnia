@@ -5,8 +5,7 @@ unit uMain;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Menus;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, Menus;
 
 type
 
@@ -54,7 +53,7 @@ function SetThreadExecutionState(esFlags: EXECUTION_STATE): EXECUTION_STATE;
 procedure TfMain.miStayAwakeClick(Sender: TObject);
 begin
   miStayAwake.Checked := not miStayAwake.Checked;
-  Timer1.Enabled:= miStayAwake.Checked;
+  Timer1.Enabled := miStayAwake.Checked;
   if miStayAwake.Checked then
     ImageList1.GetIcon(0, TrayIcon1.Icon)
   else
