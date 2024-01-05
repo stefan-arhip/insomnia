@@ -1,2 +1,0 @@
-# insomnia
-keep computer awake
